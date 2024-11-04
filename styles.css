@@ -21,6 +21,12 @@ body {
     inset: 0;
 }
 
+.wing {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
 .cloud { 
     width: 350px;
     height: 120px;
@@ -50,3 +56,23 @@ body {
     left: 130px;
 }
 
+
+
+@keyframes sky-transition {
+    
+}
+
+@keyframes cloud-transition-1 {
+    0% {}
+    100% {}
+}
+
+@keyframes cloud-transition-2 {
+    0% {}
+    100% {}
+}
+
+@keyframes cloud-transition-3 {
+    0% {}
+    100% {}
+}
