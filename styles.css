@@ -17,7 +17,8 @@ body {
 }
 
 .sky {
-    
+    position: absolute;
+    inset: 0;
 }
 
 .cloud { 
@@ -27,7 +28,7 @@ body {
     box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
 }
 
-.cloud:after, .cloud:before {
+.cloud::after, .cloud::before {
     content: "";
     position: relative;
     display: inline-block;
@@ -35,16 +36,17 @@ body {
     border-radius: inherit;
 }
 
-.cloud:after {
+.cloud::after {
     width: 100px;
     height: 100px;
     top: -220px;
     left: 50px;
 }
 
-.cloud:before {
+.cloud::before {
     width: 180px;
     height: 180px;
     top: -70px;
     left: 130px;
 }
+
