@@ -3,14 +3,21 @@ body {
     margin: 0;
     background-color: midnightblue;
     min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .window {
     overflow: hidden;
     border-radius: 50%;
-    width: 50vm;
-    height: 75vm;
-    background-color: skyblue;
+    width: 270px;
+    height: 400px;
+    position: relative;
+}
+
+.sky {
+    
 }
 
 .cloud { 
