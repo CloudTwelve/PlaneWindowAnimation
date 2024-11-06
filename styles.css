@@ -11,7 +11,11 @@ body {
     align-items: center;
 }
 
-body.windows-hovered {
+body:hover .window {
+    background-position: top;
+}
+
+body:hover {
     background-position: top;
 }
 
@@ -34,10 +38,6 @@ body.windows-hovered {
     background-size: 200% 300%;
     background-position: bottom; 
     display: block;
-}
-
-.window.hovered {
-    background-position: top;
 }
 
 .cloud { 
