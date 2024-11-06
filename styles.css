@@ -1,39 +1,48 @@
 body {
     padding: 0;
     margin: 0;
-    background-color: darkgray;
-    min-height: 80vh;
+    background: linear-gradient(0deg, lightgrey 50%, dimgrey 100%);    background-position: bottom;
+    transition: background-position 2s ease-in-out;
+    background-size: 200% 300%;
+    background-position: bottom;
+    min-height: 100vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+body.windows-hovered {
+    background-position: top;
 }
 
 .window {
     overflow: hidden;
     border-radius: 270px;
     border-style: solid;
-    border-color: lightslategray;
-    width: 60vh;
-    height: 80vh;
-    background: skyblue;
+    border-color: darkgrey;
+    border-width: 1vw;
+    width: 45vh;
+    max-width: 25vw;
+    height: 60vh;
+    max-height: 35vw;
+    background: linear-gradient(0deg,
+      powderblue 25%, 
+      skyblue 40%,
+      dodgerblue 70%,
+      midnightblue 100%);
+    transition: background-position 2s ease-in-out;
+    background-size: 200% 300%;
+    background-position: bottom; 
     display: block;
 }
 
-.sky {
-    position: absolute;
-    inset: 0;
-}
-
-.wing {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    
+.window.hovered {
+    background-position: top;
 }
 
 .cloud { 
-    width: 70px;
-    height: 24px;
+    width: 30%;
+    height: 10%;
     right: 150px;
     background:#ECEFF1;
     box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
@@ -47,21 +56,21 @@ body {
     position: relative;
     display: inline-block;
     background: inherit;
-    border-radius: inherit;
+    border-radius: 50%;
 }
 
 .cloud::after {
-    width: 20px;
-    height: 20px;
-    top: -24px;
-    left: 6px;
+    aspect-ratio: 1 / 1;
+    height: 75%;
+    top: -40%;
+    left: 10%;
 }
 
 .cloud::before {
-    width: 36px;
-    height: 36px;
-    top: -14px;
-    left: 14px;
+    aspect-ratio: 1 / 1;
+    height: 90%;
+    top: -45%;
+    left: 20%;
 }
 
 .top {
@@ -79,16 +88,11 @@ body {
     animation: cloud-transition 10s infinite ease-in-out;
 }
 
-
-@keyframes sky-transition {
-    0% {}
-}
-
 @keyframes cloud-transition {
     0% { 
         transform: translate(0px, -50%);
     }
     100% {
-        transform: translate(330px, -50%);
+        transform: translate(500px, -50%);
     }
 }
