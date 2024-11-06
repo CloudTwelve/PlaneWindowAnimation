@@ -1,5 +1,5 @@
 # PlaneWindowAnimation
-This is an animation of three plane windows. When hovering on one of the windows, the entire plane scene changes to nighttime, the cabin taking on a darker shade of grey and the sky behind the clouds turning to midnight blue.
+This is an animation of three plane windows. When hovering on the body, the entire plane scene changes to nighttime, the cabin taking on a darker shade of grey and the sky behind the clouds turning to midnight blue.
 
 # Plane Windows Before Hover (daytime)
 ![Screen Shot 2024-11-05 at 11 06 58 PM](https://github.com/user-attachments/assets/3c7dd02d-7f77-4cb2-802b-b26c05695a2e)
