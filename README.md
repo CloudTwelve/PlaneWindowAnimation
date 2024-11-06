@@ -15,6 +15,6 @@ https://codepen.io/Reem-Ahrabar/pen/oNKPwYz
 (on CodePen)
 
 # Credits!
-~ inspiration for cloud design (basically the CSS behind it) from https://lauryndbrown.github.io/2017/06/08/creating-clouds-in-css.html ~
+~ inspiration for cloud design (basically the CSS behind it) from https://lauryndbrown.github.io/2017/06/08/creating-clouds-in-css.html ~<br>
 ~ inspiration for project from another High Seas project, repo here -> https://github.com/GaoYeGithub/SunMoonAnimation/ ~
 
